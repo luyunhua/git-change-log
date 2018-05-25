@@ -14,8 +14,13 @@ class OrderPay
 	 */
 	public static function getPaymentUrl($order_id)
 	{
+		// @TODO Fix the bug, IF order_id not exist, return null
+
+
 		// @TODO get the payment url, if failed return null
 		$payment_url = 'https://www.alipay.com/xxxxxxxx';
+
+		
 		if ($payment_url === null) {
 			// @TODO trigger report
 			return null;
